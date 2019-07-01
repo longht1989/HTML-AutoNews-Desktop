@@ -1,0 +1,19 @@
+// ====================================
+// Customize layout
+// ====================================
+
+// > layout
+
+.main-column{
+    width: 795px;
+}
+.sidebar{
+    width: 320px;
+}
+
+.above-the-fold{
+	.main-column,
+    .sub-column{
+    	padding-top: 25px;
+    }
+}

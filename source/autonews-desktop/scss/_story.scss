@@ -1,0 +1,248 @@
+// ====================================
+// Story's style
+// ====================================
+
+/*
+* TABLE OF CONTENTS
+*
+* FRAMEWORK-ZONE ====================
+* no image in article
+* normal story
+* story type
+* SITE STORY GLOBAL ====================
+*/
+
+// > FRAMEWORK-ZONE ====================
+// > no image in article
+.no-img {
+    .story__thumb a {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: $gray-200;
+        border: 1px solid $gray-300;
+        text-transform: uppercase;
+        color: $gray-900;
+        font-size: 1rem;
+
+        &:after {
+            content: 'Không có ảnh' !important;
+        }
+
+        img {
+            display: none;
+        }
+    }
+}
+
+// > normal story
+.story {
+    @include clearfix;
+
+    &__thumb {
+        overflow: hidden;
+        background-color: $gray-500;
+        position: relative;
+        margin-bottom: 0;
+
+        img {
+            text-indent: -9999px;
+        }
+    }
+
+    &__heading {
+        a {
+            display: flex;
+        }
+
+        a:visited {
+            // color: $gray-500;
+        }
+    }
+
+    &__meta {
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        @include clearfix();
+
+        >* {
+            &:first-child {}
+        }
+
+        a {
+            display: flex;
+        }
+    }
+
+    &__summary {}
+
+    &:hover {}
+
+    &:focus {}
+}
+
+// > story type
+.story--live {
+    .story__thumb {
+        a:after {
+            content: 'live' !important;
+            position: absolute;
+            right: 5px;
+            bottom: 5px;
+            padding: 1px 5px 0px;
+            background-color: rgba(255, 0, 0, 0.7);
+            -webkit-animation: animation-blink 1s infinite;
+            -moz-animation: animation-blink 1s infinite;
+            -o-animation: animation-blink 1s infinite;
+            animation: animation-blink 1s infinite;
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 1rem;
+            font-weight: bold;
+
+        }
+    }
+
+    &:hover {
+        .story__thumb {
+            a:after {
+                background-position: -0px -950px;
+            }
+        }
+    }
+}
+
+@-webkit-keyframes animation-blink {
+
+    0%,
+    49% {
+        background-color: rgba(255, 0, 0, .7)
+    }
+
+    100%,
+    50% {
+        background-color: rgba(255, 0, 0, .4)
+    }
+}
+
+// > SITE STORY GLOBAL ====================
+// EDITABLE 
+.story {
+    @include clearfix;
+
+    &__thumb {
+        a{
+            display: flex;
+            width: 100%;
+            height: 100%;
+            transition: transform .5s ease-out .1s;
+        }
+        img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            height: 100%;
+        }
+
+        &:hover {
+            overflow: hidden;
+
+            a {
+                -webkit-transform: scale($rate-zoom);
+                /* Safari and Chrome */
+                -moz-transform: scale($rate-zoom);
+                /* Firefox */
+                -ms-transform: scale($rate-zoom);
+                /* IE 9 */
+                -o-transform: scale($rate-zoom);
+                /* Opera */
+                transform: scale($rate-zoom);
+            }
+        }
+    }
+
+    &__heading {
+        a {
+            display: flex;
+            font-size: 14px;
+            font-size: 1.4rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+    }
+
+    &__meta {
+        color: $gray-600;
+        font-size: 12px;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+
+        >* {
+            margin-left: $spacer-3;
+
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+
+        a {
+            color: $gray-600;
+
+            &:hover {
+                color: $primary;
+            }
+        }
+    }
+
+    &__summary {
+        font-size: 14px;
+        font-size: 1.4rem;
+        color: black;
+    }
+
+    &:hover {
+        .story__heading {
+            a {
+                color: $primary;
+            }
+        }
+    }
+
+    &:focus {
+        background-color: rgba($primary, .1);
+    }
+}
+
+// story refer - OPTION
+.story__refer {
+    margin-top: $spacer-3;
+
+    .refer {
+        margin-top: $spacer-2;
+
+        &:first-child {
+            margin-top: 0;
+        }
+
+        &__heading {
+            position: relative;
+            @include font-style(14, 20);
+            padding-left: 16px;
+
+            &:before {
+                content: '•';
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+
+            a {
+                color: $gray-900;
+            }
+        }
+    }
+}

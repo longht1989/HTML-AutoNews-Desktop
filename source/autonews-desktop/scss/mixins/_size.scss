@@ -1,0 +1,12 @@
+// Sizing shortcuts
+
+@mixin size($width, $height) {
+	$new-width: ($width / 10);
+	$new-height: ($height / 10);
+	// font-size: ($font-size + px);
+	width: ($new-width + rem);
+	// line-height: ($line-height + px);
+	height: ($new-height + rem);
+}
+
+

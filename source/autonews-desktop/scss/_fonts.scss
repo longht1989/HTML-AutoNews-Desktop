@@ -1,0 +1,34 @@
+// ====================================
+// Global fonts
+// ====================================
+
+/*
+* TABLE OF CONTENTS
+*
+* Roboto
+*/
+
+/* > Roboto */
+
+// Note: normal + bold
+@font-face {
+    font-family: 'baiJamjuree';
+    // src: url('../fonts/Bai_Jamjuree/BaiJamjuree-Regular.eot');
+    src: 
+        // url('../fonts/Bai_Jamjuree/BaiJamjuree-Regular.eot?#iefix') format('embedded-opentype'),
+        // url('../fonts/Bai_Jamjuree/BaiJamjuree-Regular.woff') format('woff'),
+        url('../fonts/Bai_Jamjuree/BaiJamjuree-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'baiJamjuree';
+    // src: url('../fonts/Bai_Jamjuree/BaiJamjuree-Bold.eot');
+    src: 
+        // url('../fonts/Bai_Jamjuree/BaiJamjuree-Bold.eot?#iefix') format('embedded-opentype'),
+        // url('../fonts/Bai_Jamjuree/BaiJamjuree-Bold.woff') format('woff'),
+        url('../fonts/Bai_Jamjuree/BaiJamjuree-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}

@@ -1,0 +1,55 @@
+// ====================================
+// Customize breadcrumbs
+// ====================================
+
+/*
+* TABLE OF CONTENTS
+*
+* LOGO + LIVE ICON +
+* --- header
+* --- pin verticle menu
+* --- story timeline
+* --- article action
+* --- user context menu
+* --- user
+* --- btn-toggle
+* --- photoswipte + weather
+* --- login
+* --- soccer
+* --- modal icon
+* --- channel-box
+*/
+
+// > LOGO + LIVE ICON + 
+.icon {
+    background-image: url('../img/kt-emagazine-'+$sprite-version+'.png');
+    background-size: ($sprite-w + px) ($sprite-h + px);
+    vertical-align: middle;
+    display: inline-block;
+    &--social-fb{
+        background-position: -0px -100px;
+    }
+    &--social-zalo{
+        background-position: -0px -50px;
+    }
+    &--social-comment{
+        background-position: -0px -0px;
+    }
+    @at-root [class*="icon--social-"]{
+        width: 24px;
+        height: 24px;
+    }
+    &--mix-back{
+        background-position: -0px -150px;
+    }
+    &--mix-prev{
+        background-position: -0px -250px;
+    }
+    &--mix-next{
+        background-position: -0px -350px;
+    }
+    @at-root [class*="icon--mix-"]{
+        width: 90px;
+        height: 90px;
+    }
+}

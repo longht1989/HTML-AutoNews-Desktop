@@ -1,0 +1,136 @@
+// ====================================
+// header style
+// ====================================
+
+/*
+* TABLE OF CONTENTS
+*
+* header +
+*/
+
+// > header
+.site-header {
+    height: 70px;
+    background-color: #000;
+
+    .col-9 {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .site-logo{
+        position: absolute;
+        top: 20px;
+        left: 15px;
+        z-index: 20;
+        width: 140px;
+        height: 80px;
+        background:  url('../img/auto-news-logo.svg') 0 0 no-repeat;
+        a{
+            width: 100%;
+            height: 100%;
+            display: flex;
+        }
+        &:hover{
+            opacity: .8;
+        }
+    }
+
+    .nav-link {
+        height: 70px;
+        display: flex;
+        align-items: center;
+
+        a {
+            display: flex;
+            height: 70px;
+            padding: 0 30px;
+            align-items: center;
+            font-size: 1.6rem;
+            text-transform: uppercase;
+            color: #fff;
+
+            &:first-child {
+                margin-left: 0;
+            }
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .header-tool {
+        height: 70px;
+        display: flex;
+        align-items: center;
+        margin-left: 30px;
+
+        .search {
+            width: 50px;
+            background-color: transparent;
+            height: 50px;
+            position: relative;
+            transition: all .3s ease-in-out;
+
+            input {
+                display: none;
+                width: 0;
+                border: none;
+                background-color: $gray-200;
+                transition: all .3s ease-in-out;
+                &:hover{
+                    background-color: white;
+                }
+            }
+
+            button {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                right: 0px;
+                width: 50px;
+                height: 50px;
+                border: none;
+
+                i {
+                    font-size: 30px;
+                    color: #fff;
+                    transition: all .3s ease-in-out;
+                }
+            }
+
+            &:hover,
+            &.is-active {
+                width: 300px;
+                background-color: #fff;
+
+                input {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    padding: 0 50px 0 10px;
+                }
+
+                button {
+                    i {
+                        color: #000;
+                    }
+                }
+            }
+        }
+    }
+
+    .menu {
+        width: 50px;
+        height: 50px;
+        border: none;
+        margin-left: 20px;
+
+        i {
+            color: #fff;
+            font-size: 30px;
+        }
+
+    }
+}

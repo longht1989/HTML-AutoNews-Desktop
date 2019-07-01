@@ -1,0 +1,162 @@
+// ====================================
+// Story's style
+// ====================================
+
+/*
+* TABLE OF CONTENTS
+*
+*/
+
+.site-footer {
+    .footer-navigation {
+        padding: 70px 0 60px;
+        background-color: #1E1E1E;
+
+        .col-2 {
+            padding: 0 15px;
+        }
+
+        .group-link {
+            text-transform: uppercase;
+            font-size: 24px;
+            font-weight: bold;
+
+            a {
+                color: #fff;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .more-link {
+            border-top: 4px solid $primary;
+            padding-top: 30px;
+            margin-top: 20px;
+            display: flex;
+            flex-flow: column;
+
+            a {
+                margin-top: 30px;
+                display: flex;
+                font-size: 1.6rem;
+                color: #fff;
+
+                &:first-child {
+                    margin-top: 0;
+                }
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    .footer-info {
+        border-top: 10px solid $primary;
+        padding-top: 40px;
+        background-color: #181818;
+
+        .logo-zone {
+            display: flex;
+            align-items: center;
+            margin-top: 30px;
+
+            a {
+                margin-left: 40px;
+                display: flex;
+
+                &:first-child {
+                    margin-left: 0;
+                }
+                &:hover{
+                    opacity: .7;
+                }
+            }
+        }
+
+        .follow-zone {
+            text-align: right;
+
+            .box-heading {
+                font-size: 2.4rem;
+                text-transform: uppercase;
+                font-weight: bold;
+                color: #fff;
+            }
+
+            .box-content {
+                margin-top: 20px;
+                display: flex;
+                justify-content: space-around;
+
+                a {
+                    width: 70px;
+                    height: 85px;
+                    display: flex;
+                    flex-flow: column wrap;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-left: 40px;
+                    color: #fff;
+
+                    i {
+                        color: #fff;
+                        font-size: 50px;
+                    }
+
+                    &:first-child {
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+
+        .copy-info {
+            p {
+                font-size: 1.6rem;
+                margin-top: 30px;
+                color: #fff;
+
+                &:first-child {
+                    margin-top: 0;
+                }
+            }
+        }
+
+        .col-6:nth-child(1) {
+            .copy-info {
+                margin-top: 60px;
+
+                b {
+                    display: block;
+                }
+            }
+        }
+
+        .col-6:nth-child(2) {
+            .copy-info {
+                text-align: right;
+                margin-top: 30px;
+            }
+        }
+
+        .copy-right {
+            padding: 50px 0 30px;
+            opacity: .3;
+            color: #fff;
+            text-align: center;
+
+            p {
+                margin-top: 10px;
+                font-size: 1.6rem;
+
+                &:first-child {
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+}
