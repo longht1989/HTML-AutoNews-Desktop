@@ -1,8 +1,8 @@
 {
-  "name": "baomoi-v2",
+  "name": "N/A",
   "preferGlobal": "false",
   "version": "1.0.0",
-  "description": "this framework for baomoi.com ",
+  "description": "N/A",
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.0",

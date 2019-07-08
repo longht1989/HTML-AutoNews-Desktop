@@ -4,16 +4,26 @@
 
 // > layout
 
-.main-column{
+.main-column {
     width: 795px;
 }
-.sidebar{
+
+.sidebar {
     width: 320px;
 }
 
-.above-the-fold{
-	.main-column,
-    .sub-column{
-    	padding-top: 25px;
+.above-the-fold {
+
+    .main-column,
+    .sub-column {
+        padding-top: 25px;
     }
+}
+
+.medium-zoom-overlay {
+    z-index: 21;
+}
+
+.medium-zoom-image {
+    z-index: 22;
 }
