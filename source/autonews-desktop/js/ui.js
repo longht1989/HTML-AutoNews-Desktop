@@ -25,7 +25,7 @@ $('.hero-zone .wrap').bxSlider({
     pause: 20000
 });
 
-$('.best-selling-car .wrap').bxSlider({
+$('.top-view .wrap').bxSlider({
     slideWidth: 400,
     minSlides: 1,
     maxSlides: 1,
@@ -38,9 +38,9 @@ $('.best-selling-car .wrap').bxSlider({
 });
 
 $('.most-read-box .wrap').bxSlider({
-    slideWidth: 230,
-    minSlides: 3,
-    maxSlides: 4,
+    slideWidth: 250,
+    minSlides: 4,
+    maxSlides: 5,
     slideMargin: 0,
     // controls: false,
     nextSelector: ".most-read-box .btn-next",

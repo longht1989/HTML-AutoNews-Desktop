@@ -248,7 +248,7 @@ a {
 
 // > review-box
 .review-box {
-    width: 765px;
+    width: 755px;
 
     .box-heading {
         @include box-heading-style-1;
@@ -287,7 +287,7 @@ a {
                     left: -20px;
                     top: -15px;
                     z-index: 20;
-                    border: 6px solid $primary;
+                    border: 4px solid $primary;
                     transition: all .3s ease-in-out;
                 }
 
@@ -452,42 +452,39 @@ a {
 }
 
 // > best-selling-car
-.best-selling-car {
-    width: 370px;
+.top-view {
+    width: 320px;
 
     .box-heading {
         @include box-heading-style-1;
-        padding-left: 20px;
+        // padding-left: 20px;
     }
 
     .box-content {
-        margin-top: 5px;
-        margin-left: -40px;
-        padding-top: 40px;
+        margin-top: 20px;
+        margin-left: -60px;
+        padding: 40px 0 0;
         position: relative;
-        max-height: 460px;
         overflow: hidden;
 
         &:before {
             content: '';
-            height: 440px;
             width: 350px;
             background-color: #fff;
             position: absolute;
             top: 0;
             left: 60px;
+            bottom: 11px;
         }
 
-        .item {
-            height: 400px;
-        }
+        .item {}
 
         .story {
             @include clearfix();
             position: relative;
             margin-top: 30px;
-            padding-left: 105px;
-            transition: all .3s ease-in-out;
+            padding: 0 10px 0 85px;
+            transition: all 0.3s ease-in-out;
 
             &:first-child {
                 margin-top: 0;
@@ -498,7 +495,8 @@ a {
                 height: 75px;
                 float: left;
                 box-shadow: 0 0 15px rgba(black, .15);
-                transition: all .3s ease-in-out;
+                transition: all 0.3s ease-in-out;
+                transform-origin: right top;
 
                 >a {
                     transform: none;
@@ -517,35 +515,36 @@ a {
             }
 
             &__position {
+
                 position: absolute;
-                left: 35px;
-                top: 12px;
-                width: 50px;
-                height: 50px;
+                left: 45px;
+                top: 24px;
+                width: 30px;
+                height: 30px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                background-color: $primary;
-                font-size: 24px;
-                font-weight: bold;
+                background-color: #0044E1;
+                font-size: 18px;
+                font-weight: 700;
                 color: #fff;
                 transition: all .3s ease-in-out;
+                z-index: 3;
             }
         }
 
         .story:hover {
-            padding-top: 25px;
 
             .story__thumb {
-                width: 145px;
-                height: 100px;
-                margin-left: -45px;
-                margin-top: -25px;
+                transform: scale(1.45, 1.33);
             }
 
             .story__position {
                 left: 10px;
                 top: 25px;
+                width: 50px;
+                height: 50px;
+                font-size: 24px;
             }
         }
 
@@ -555,6 +554,10 @@ a {
             .btn-prev {}
 
             .btn-next {}
+        }
+
+        .bx-viewport {
+            padding-bottom: 40px;
         }
 
         .bx-pager {
@@ -584,11 +587,15 @@ a {
             }
         }
     }
+
+    .fyi--300 {
+        margin: 24px auto 0;
+    }
 }
 
 // > most-read-box
 .most-read-box {
-    width: 760px;
+    width: 100%;
     max-height: 525px;
     overflow: hidden;
 
@@ -605,7 +612,7 @@ a {
 
         .story {
             @include clearfix();
-            width: 230px;
+            width: 250px;
             height: 435px;
             margin-right: -10px !important;
             padding-top: 80px;
@@ -616,7 +623,7 @@ a {
             &:before {
                 content: '';
                 height: 395px;
-                width: 200px;
+                width: 220px;
                 background-color: #fff;
                 position: absolute;
                 top: 20px;
@@ -625,8 +632,8 @@ a {
             }
 
             &__thumb {
-                width: 200px;
-                height: 150px;
+                width: 220px;
+                height: 165px;
                 margin: 0px 15px 0;
                 position: relative;
                 transition: all .3s ease-in-out;
@@ -641,6 +648,8 @@ a {
                 position: absolute;
                 bottom: 40px;
                 left: 25px;
+                color: $secondary;
+                font-weight: bold;
             }
 
             &__position {
