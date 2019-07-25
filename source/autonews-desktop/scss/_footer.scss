@@ -6,6 +6,9 @@
 * TABLE OF CONTENTS
 *
 */
+html {
+    scroll-behavior: smooth;
+}
 
 .site-footer {
     .footer-navigation {
@@ -31,7 +34,7 @@
         }
 
         .more-link {
-            border-top: 4px solid $primary;
+            border-top: 4px solid $blue;
             padding-top: 30px;
             margin-top: 20px;
             display: flex;
@@ -64,6 +67,15 @@
             align-items: center;
             margin-top: 30px;
 
+            .site-logo {
+                width: 210px;
+
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+
             a {
                 margin-left: 40px;
                 display: flex;
@@ -71,7 +83,8 @@
                 &:first-child {
                     margin-left: 0;
                 }
-                &:hover{
+
+                &:hover {
                     opacity: .7;
                 }
             }
@@ -157,6 +170,25 @@
                     margin-top: 0;
                 }
             }
+        }
+    }
+
+    #btnGotop {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 40px;
+        height: 40px;
+        font-size: 24px;
+        line-height: 40px;
+        color: white;
+        background-color: $blue;
+        text-align: center;
+        display: none;
+        z-index: 1000;
+
+        &:hover {
+            opacity: 0.8;
         }
     }
 }

@@ -27,3 +27,53 @@
 .medium-zoom-image {
     z-index: 22;
 }
+
+.top-box {
+    &.common {
+    	margin-bottom: 24px;
+        .box-content {
+            padding: 24px;
+            background-color: #fff;
+            margin-top: 20px !important;
+        }
+
+        .form-control,
+        .btn {
+            height: 50px;
+        }
+
+        .form {
+            &-group {
+                margin-bottom: 24px;
+
+                label {
+                    font-size: 16px;
+                    text-transform: uppercase;
+                }
+            }
+
+            &-control {
+                width: 100%;
+                padding: 12px;
+                background: #333;
+                color: white;
+
+                &:focus,
+                &:active {
+                    border-color: $blue;
+                }
+            }
+        }
+
+        .btn {
+            font-size: 16px;
+            padding-left: 24px;
+            padding-right: 24px;
+            border-radius: 0;
+
+            &+.btn {
+                margin-left: 16px;
+            }
+        }
+    }
+}

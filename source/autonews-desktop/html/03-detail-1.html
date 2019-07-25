@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Favicon -->
-    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="shortcut icon" href="../styles/img/favicon.ico">
     <!-- CSS Page -->
     <link rel="stylesheet" type="text/css" href="../styles/css/autonews-desktop.css">
 </head>
@@ -23,16 +23,164 @@
                         <h1 class="site-logo"><a href="01-homepage.html"></a></h1>
                     </div>
                     <div class="col-9">
-                        <div class="nav-link">
-                            <a href="02-category.html">Tin tức</a>
-                            <a href="02-category.html">Reviews</a>
-                        </div>
+                        <ul class="nav-link">
+                            <li>
+                                <a href="02-category-1.html">Tin tức</a>
+                                <div class="nav-link__expand">
+                                    <div class="container">
+                                        <div class="subcate">
+                                            <a href="02-category-1.html" class="maincate">Tin tức</a>
+                                            <a href="02-category-1.html">Trong nước</a>
+                                            <a href="02-category-1.html">Quốc tế</a>
+                                        </div>
+                                        <div class="story-listing">
+                                            <article class="story">
+                                                <figure class="story__thumb">
+                                                    <a href="#"><img src="https://source.unsplash.com/640x360/?car/?sig=53"></a>
+                                                </figure>
+                                                <div class="story__heading"><a href="03-detail-2.html">Hướng dẫn lái xe (P2): TRÁNH NHẦM CHÂN GA/PHANH chỉ sau 20 phút</a></div>
+                                                <div class="story__meta">
+                                                    <time>16/05/2019</time>
+                                                </div>
+                                            </article>
+                                            <article class="story">
+                                                <figure class="story__thumb">
+                                                    <a href="#"><img src="https://source.unsplash.com/640x360/?car/?sig=53"></a>
+                                                </figure>
+                                                <div class="story__heading"><a href="03-detail-2.html">Hướng dẫn lái xe (P2): TRÁNH NHẦM CHÂN GA/PHANH chỉ sau 20 phút</a></div>
+                                                <div class="story__meta">
+                                                    <time>16/05/2019</time>
+                                                </div>
+                                            </article>
+                                            <article class="story">
+                                                <figure class="story__thumb">
+                                                    <a href="#"><img src="https://source.unsplash.com/640x360/?car/?sig=53"></a>
+                                                </figure>
+                                                <div class="story__heading"><a href="03-detail-2.html">Hướng dẫn lái xe (P2): TRÁNH NHẦM CHÂN GA/PHANH chỉ sau 20 phút</a></div>
+                                                <div class="story__meta">
+                                                    <time>16/05/2019</time>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><a href="02-category-1.html">Reviews</a></li>
+                            <li><a href="02-category-1.html">Tư vấn</a></li>
+                            <li><a href="02-category-1.html">Giá xe</a></li>
+                            <li><a href="02-category-1.html">Video - Ảnh</a>
+                                <div class="nav-link__expand">
+                                    <div class="container">
+                                        <div class="subcate">
+                                            <a href="02-category-1.html" class="maincate">Video - Ảnh</a>
+                                            <a href="02-category-1.html">Video</a>
+                                            <a href="02-category-1.html">Ảnh</a>
+                                        </div>
+                                        <div class="story-listing">
+                                            <article class="story">
+                                                <figure class="story__thumb">
+                                                    <a href="#"><img src="https://source.unsplash.com/640x360/?car/?sig=53"></a>
+                                                </figure>
+                                                <div class="story__heading"><a href="03-detail-2.html">Hướng dẫn lái xe (P2): TRÁNH NHẦM CHÂN GA/PHANH chỉ sau 20 phút</a></div>
+                                                <div class="story__meta">
+                                                    <time>16/05/2019</time>
+                                                </div>
+                                            </article>
+                                            <article class="story">
+                                                <figure class="story__thumb">
+                                                    <a href="#"><img src="https://source.unsplash.com/640x360/?car/?sig=53"></a>
+                                                </figure>
+                                                <div class="story__heading"><a href="03-detail-2.html">Hướng dẫn lái xe (P2): TRÁNH NHẦM CHÂN GA/PHANH chỉ sau 20 phút</a></div>
+                                                <div class="story__meta">
+                                                    <time>16/05/2019</time>
+                                                </div>
+                                            </article>
+                                            <article class="story">
+                                                <figure class="story__thumb">
+                                                    <a href="#"><img src="https://source.unsplash.com/640x360/?car/?sig=53"></a>
+                                                </figure>
+                                                <div class="story__heading"><a href="03-detail-2.html">Hướng dẫn lái xe (P2): TRÁNH NHẦM CHÂN GA/PHANH chỉ sau 20 phút</a></div>
+                                                <div class="story__meta">
+                                                    <time>16/05/2019</time>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
                         <div class="header-tool">
                             <div class="search">
-                                <input type="text" placeholder="Keywords here...">
-                                <button class=""><i class="fal fa-search"></i></button>
+                                <span class="" id="button-search" data-target="wrap-menu"><i class="fal fa-search"></i></span>
                             </div>
-                            <button class="menu"><i class="fal fa-bars"></i></button>
+                            <span class="menu" data-target="wrap-menu" id="button-expand"><i class="fal fa-bars"></i></span>
+                            <span class="menu" data-target="wrap-menu" id="button-collapse"><i class="fal fa-times"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-expand" id="wrap-menu">
+                    <div class="container">
+                        <div class="search-form">
+                            <div class="suggestion">
+                                <span class="label"><i class="fal fa-chart-line"></i> Xu hướng</span>
+                                <a href="02-category-1.html" class="item">Lộ diện “hàng nóng” Chevrolet CORVETTE C8</a>
+                                <a href="02-category-1.html" class="item">Mazda2 facelift</a>
+                                <a href="02-category-1.html" class="item">BMW X5 xDrive40i 2019</a>
+                            </div>
+                            <input type="text" placeholder="Từ khóa tìm kiếm" id="searchInput">
+                            <i class="fal fa-search"></i>
+                        </div>
+                        <div class="row">
+                            <div class="col-2">
+                                <div class="group-link"><a href="02-category-1.html">Tin tức</a></div>
+                                <div class="more-link">
+                                    <a href="02-category-1.html">Tin trong nước</a>
+                                    <a href="02-category-1.html">Tin quốc tế</a>
+                                    <a href="02-category-1.html">Tin từ hãng</a>
+                                    <a href="02-category-1.html">Tin triệu hồi</a>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="group-link"><a href="02-category-1.html">Reviews</a></div>
+                                <div class="more-link">
+                                    <a href="02-category-1.html">Reviews tổng hợp</a>
+                                    <a href="02-category-1.html">So sánh</a>
+                                    <a href="02-category-1.html">Người dùng nói về xe</a>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="group-link"><a href="02-category-1.html">Văn hoá xe</a></div>
+                                <div class="more-link">
+                                    <a href="02-category-1.html">Đời sống xe</a>
+                                    <a href="02-category-1.html">Xe độ, xe độc</a>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="group-link"><a href="02-category-1.html">Tư vấn</a></div>
+                                <div class="more-link">
+                                    <a href="02-category-1.html">Mẹo vặt</a>
+                                    <a href="02-category-1.html">Lỗi thường gặp</a>
+                                    <a href="02-category-1.html">Hỏi đáp</a>
+                                    <a href="02-category-1.html">Tin triệu hồi</a>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="group-link"><a href="02-category-1.html">f1</a></div>
+                                <div class="more-link">
+                                    <a href="02-category-1.html">Tin tức</a>
+                                    <a href="02-category-1.html">Đội đua</a>
+                                    <a href="02-category-1.html">Tay đua</a>
+                                    <a href="02-category-1.html">F1 Hà Nội</a>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="group-link"><a href="02-category-1.html">Ảnh & Video</a></div>
+                                <div class="more-link">
+                                    <a href="02-category-1.html">Video reviews & lái thử</a>
+                                    <a href="02-category-1.html">Video tư vấn</a>
+                                    <a href="02-category-1.html">Video F1</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -84,6 +232,7 @@
                             <!-- main detail -->
                             <article class="detail-wrap">
                                 <header class="detail__header">
+                                    <div class="detail__avatar"><img src="https://source.unsplash.com/800x450/?car/?sig=40" alt=""></div>
                                     <div class="detail__meta">
                                         <time>16/05/2019</time>
                                         <ul class="detail__social">
@@ -97,14 +246,14 @@
                                 </header>
                                 <div class="detail__content">
                                     <div class="content-image">
-                                        <img src="https://source.unsplash.com/800x450/?car/?sig=40" alt="" data-zoom-src="https://source.unsplash.com/1920x1080/?car/?sig=0" data-zoomable>
+                                        <img src="https://source.unsplash.com/1920x1080/?car/?sig=40" alt="" data-zoom-src="https://source.unsplash.com/1920x1080/?car/?sig=0" data-zoomable>
                                         <div class="fig">Kia Seltos là mẫu SUV cỡ nhỏ, được định vị nằm giữa <b>Soul và Sportage</b>. Thiết kế ngoại thất của Kia Seltos 2020 là sự kết hợp giữa phong cách trẻ trung, hiện đại và những đường gân sắc sảo tô đậm vẻ mạnh mẽ, khỏe khoắn của một chiếc SUV truyền thống.</div>
                                     </div>
                                     <p>Di chuyển vào khoang cabin, người lái được chào đón bằng hệ thống thông tin giải trí với màn hình cảm ứng cỡ lớn 10,25 inch đặt ở giữa bảng điều khiển và hệ thống đèn trang trí nội thất Sound Mood Lighting. Ngoài ra, khách hàng có thể mua thêm tùy chọn màn hình HUD 8 inch, hệ thống âm thanh cao cấp Bose với 8 loa và một số trang bị khác để biến nội thất của Kia Seltos 2020 trở nên tiện nghi và thoải mái như trong phòng khách.</p>
                                     <div>Di chuyển vào khoang cabin, người lái được chào đón bằng hệ thống thông tin giải trí với màn hình cảm ứng cỡ lớn 10,25 inch đặt ở giữa bảng điều khiển và hệ thống đèn trang trí nội thất Sound Mood Lighting. Ngoài ra, khách hàng có thể mua thêm tùy chọn màn hình HUD 8 inch, hệ thống âm thanh cao cấp Bose với 8 loa và một số trang bị khác để biến nội thất của Kia Seltos 2020 trở nên tiện nghi và thoải mái như trong phòng khách.
                                         <br>
                                         Người lái sẽ được hỗ trợ bởi một số hệ thống an toàn chủ động và thụ động như kiểm soát ổn định thân xe kết hợp với hệ thống kiểm soát lực kéo và kiểm soát ổn định điện tử. Bên cạnh đó, xe còn được trang bị hệ thống hỗ trợ khởi hành ngang dốc, hỗ trợ lực phanh và cảm biến đỗ xe trước/sau.</div>
-                                    <div class="content-image pull-left">
+                                    <div class="image-wrap align-left-image">
                                         <img src="https://source.unsplash.com/450x800/?car/?sig=39" alt="" data-zoom-src="https://source.unsplash.com/1920x1080/?car/?sig=0" data-zoomable>
                                         <div class="fig">Dàn trải đầy đủ các trang bị từ những phím điều khiển trung tâm tích hợp trên vô-lăng cho đến màn hình giải trí hiện đại.</div>
                                     </div>
@@ -168,38 +317,14 @@
                                 </div>
                             </article>
                             <!-- related box -->
-                            <div class="top-box">
-                                <div class="box-heading"><a href="02-category.html">TIÊU ĐIỂM</a></div>
-                                <div class="box-content">
-                                    <div class="rank-2-stories">
-                                        <article class="story story--tilt-2" data-tilt>
-                                            <figure class="story__thumb">
-                                                <a href="#"><img src="https://source.unsplash.com/400x275/?car/?sig=41"></a>
-                                            </figure>
-                                            <div class="story__heading"><a href="03-article.html">Cấm Huawei dùng công nghệ Mỹ - Nước cờ sai của Tổng thống Trump?</a></div>
-                                            <div class="story__meta">
-                                                <time>16/05/2019</time>
-                                            </div>
-                                        </article>
-                                        <article class="story story--tilt-5" data-tilt>
-                                            <figure class="story__thumb">
-                                                <a href="#"><img src="https://source.unsplash.com/400x275/?car/?sig=42"></a>
-                                            </figure>
-                                            <div class="story__heading"><a href="03-article.html">Cấm Huawei dùng công nghệ Mỹ - Nước cờ sai của Tổng thống Trump?</a></div>
-                                            <div class="story__meta">
-                                                <time>16/05/2019</time>
-                                            </div>
-                                        </article>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="listing-box">
+                            <div class="top-box listing-box">
+                                <div class="box-heading"><a href="02-category.html">Tin mới</a></div>
                                 <div class="box-content">
                                     <article class="story">
                                         <figure class="story__thumb">
                                             <a href="#"><img src="https://source.unsplash.com/205x185/?car/?sig=0"></a>
                                         </figure>
-                                        <div class="story__heading"><a href="03-article.html">Cấm Huawei dùng công nghệ Mỹ - Nước cờ sai của Tổng thống Trump?</a></div>
+                                        <div class="story__heading"><a href="03-detail-2.html">Cấm Huawei dùng công nghệ Mỹ - Nước cờ sai của Tổng thống Trump?</a></div>
                                         <div class="story__meta"><time>16/05/2019</time></div>
                                         <div class="story__summary"> Vẫn giữ thiết kế 5 chỗ, Mazda CX5 2018 đã có nhiều cải tiến về thiết kế, trang bị và hàng loạt các trang bị an toàn tiên tiến... </div>
                                     </article>
@@ -207,7 +332,7 @@
                                         <figure class="story__thumb">
                                             <a href="#"><img src="https://source.unsplash.com/205x185/?car/?sig=0"></a>
                                         </figure>
-                                        <div class="story__heading"><a href="03-article.html">Cấm Huawei dùng công nghệ Mỹ - Nước cờ sai của Tổng thống Trump?</a></div>
+                                        <div class="story__heading"><a href="03-detail-2.html">Cấm Huawei dùng công nghệ Mỹ - Nước cờ sai của Tổng thống Trump?</a></div>
                                         <div class="story__meta"><time>16/05/2019</time></div>
                                         <div class="story__summary"> Vẫn giữ thiết kế 5 chỗ, Mazda CX5 2018 đã có nhiều cải tiến về thiết kế, trang bị và hàng loạt các trang bị an toàn tiên tiến... </div>
                                     </article>
@@ -215,7 +340,7 @@
                                         <figure class="story__thumb">
                                             <a href="#"><img src="https://source.unsplash.com/205x185/?car/?sig=0"></a>
                                         </figure>
-                                        <div class="story__heading"><a href="03-article.html">Cấm Huawei dùng công nghệ Mỹ - Nước cờ sai của Tổng thống Trump?</a></div>
+                                        <div class="story__heading"><a href="03-detail-2.html">Cấm Huawei dùng công nghệ Mỹ - Nước cờ sai của Tổng thống Trump?</a></div>
                                         <div class="story__meta"><time>16/05/2019</time></div>
                                         <div class="story__summary"> Vẫn giữ thiết kế 5 chỗ, Mazda CX5 2018 đã có nhiều cải tiến về thiết kế, trang bị và hàng loạt các trang bị an toàn tiên tiến... </div>
                                     </article>
@@ -223,7 +348,7 @@
                                         <figure class="story__thumb">
                                             <a href="#"><img src="https://source.unsplash.com/205x185/?car/?sig=0"></a>
                                         </figure>
-                                        <div class="story__heading"><a href="03-article.html">Cấm Huawei dùng công nghệ Mỹ - Nước cờ sai của Tổng thống Trump?</a></div>
+                                        <div class="story__heading"><a href="03-detail-2.html">Cấm Huawei dùng công nghệ Mỹ - Nước cờ sai của Tổng thống Trump?</a></div>
                                         <div class="story__meta"><time>16/05/2019</time></div>
                                         <div class="story__summary"> Vẫn giữ thiết kế 5 chỗ, Mazda CX5 2018 đã có nhiều cải tiến về thiết kế, trang bị và hàng loạt các trang bị an toàn tiên tiến... </div>
                                     </article>
@@ -231,13 +356,13 @@
                                         <figure class="story__thumb">
                                             <a href="#"><img src="https://source.unsplash.com/205x185/?car/?sig=0"></a>
                                         </figure>
-                                        <div class="story__heading"><a href="03-article.html">Cấm Huawei dùng công nghệ Mỹ - Nước cờ sai của Tổng thống Trump?</a></div>
+                                        <div class="story__heading"><a href="03-detail-2.html">Cấm Huawei dùng công nghệ Mỹ - Nước cờ sai của Tổng thống Trump?</a></div>
                                         <div class="story__meta"><time>16/05/2019</time></div>
                                         <div class="story__summary"> Vẫn giữ thiết kế 5 chỗ, Mazda CX5 2018 đã có nhiều cải tiến về thiết kế, trang bị và hàng loạt các trang bị an toàn tiên tiến... </div>
                                     </article>
                                 </div>
                                 <div class="box-footer">
-                                    <p class="text-center view-more"><a href="03-article.html" class="btn btn-outline-primary btn-lg">Xem thêm <span class="fal fa-arrow-down"></span></a></p>
+                                    <p class="text-center view-more"><a href="03-detail-2.html" class="btn btn-outline-primary btn-lg">Xem thêm <span class="fal fa-arrow-down"></span></a></p>
                                 </div>
                             </div>
                         </div>
@@ -250,7 +375,7 @@
                                             <figure class="story__thumb">
                                                 <a href="#"><img src="https://source.unsplash.com/400x275/?car/?sig=43"></a>
                                             </figure>
-                                            <div class="story__heading"><a href="03-article.html">Cấm Huawei dùng công nghệ Mỹ - Nước cờ sai của Tổng thống Trump?</a></div>
+                                            <div class="story__heading"><a href="03-detail-2.html">Cấm Huawei dùng công nghệ Mỹ - Nước cờ sai của Tổng thống Trump?</a></div>
                                             <div class="story__meta">
                                                 <time>16/05/2019</time>
                                             </div>
@@ -264,19 +389,19 @@
                                             <figure class="story__thumb">
                                                 <a href="#"><img src="https://source.unsplash.com/400x275/?car/?sig=44"></a>
                                             </figure>
-                                            <div class="story__heading"><a href="03-article.html">Top 5 ô tô GẦM CAO tầm giá 500-700 triệu đồng</a></div>
+                                            <div class="story__heading"><a href="03-detail-2.html">Top 5 ô tô GẦM CAO tầm giá 500-700 triệu đồng</a></div>
                                         </article>
                                         <article class="story">
                                             <figure class="story__thumb">
                                                 <a href="#"><img src="https://source.unsplash.com/400x275/?car/?sig=45"></a>
                                             </figure>
-                                            <div class="story__heading"><a href="03-article.html">Hướng dẫn lái xe: Kỹ năng lái xe tiết kiệm nhiên liệu</a></div>
+                                            <div class="story__heading"><a href="03-detail-2.html">Hướng dẫn lái xe: Kỹ năng lái xe tiết kiệm nhiên liệu</a></div>
                                         </article>
                                         <article class="story">
                                             <figure class="story__thumb">
                                                 <a href="#"><img src="https://source.unsplash.com/400x275/?car/?sig=46"></a>
                                             </figure>
-                                            <div class="story__heading"><a href="03-article.html">Cầm lái SUV hạng sang Lexus NX200t qua 1.200km</a></div>
+                                            <div class="story__heading"><a href="03-detail-2.html">Cầm lái SUV hạng sang Lexus NX200t qua 1.200km</a></div>
                                         </article>
                                     </div>
                                 </div>
@@ -289,13 +414,13 @@
                                             <figure class="story__thumb">
                                                 <a href="#"><img src="https://source.unsplash.com/400x275/?car/?sig=14"></a>
                                             </figure>
-                                            <div class="story__heading"><a href="03-article.html">Honda Odyssey 2.4L 2016</a></div>
+                                            <div class="story__heading"><a href="03-detail-2.html">Honda Odyssey 2.4L 2016</a></div>
                                         </article>
                                         <article class="story">
                                             <figure class="story__thumb">
                                                 <a href="#"><img src="https://source.unsplash.com/400x275/?car/?sig=15"></a>
                                             </figure>
-                                            <div class="story__heading"><a href="03-article.html">Honda Odyssey 2.4L 2016</a></div>
+                                            <div class="story__heading"><a href="03-detail-2.html">Honda Odyssey 2.4L 2016</a></div>
                                         </article>
                                     </div>
                                     <div class="item-compare">
@@ -303,13 +428,13 @@
                                             <figure class="story__thumb">
                                                 <a href="#"><img src="https://source.unsplash.com/400x275/?car/?sig=16"></a>
                                             </figure>
-                                            <div class="story__heading"><a href="03-article.html">Volkswagen Passat BlueMotion High</a></div>
+                                            <div class="story__heading"><a href="03-detail-2.html">Volkswagen Passat BlueMotion High</a></div>
                                         </article>
                                         <article class="story">
                                             <figure class="story__thumb">
                                                 <a href="#"><img src="https://source.unsplash.com/400x275/?car/?sig=17"></a>
                                             </figure>
-                                            <div class="story__heading"><a href="03-article.html">Honda Odyssey 2.4L 2016</a></div>
+                                            <div class="story__heading"><a href="03-detail-2.html">Honda Odyssey 2.4L 2016</a></div>
                                         </article>
                                     </div>
                                     <div class="item-compare">
@@ -317,13 +442,13 @@
                                             <figure class="story__thumb">
                                                 <a href="#"><img src="https://source.unsplash.com/400x275/?car/?sig=18"></a>
                                             </figure>
-                                            <div class="story__heading"><a href="03-article.html">Honda Odyssey 2.4L 2016</a></div>
+                                            <div class="story__heading"><a href="03-detail-2.html">Honda Odyssey 2.4L 2016</a></div>
                                         </article>
                                         <article class="story">
                                             <figure class="story__thumb">
                                                 <a href="#"><img src="https://source.unsplash.com/400x275/?car/?sig=19"></a>
                                             </figure>
-                                            <div class="story__heading"><a href="03-article.html">Honda Odyssey 2.4L 2016</a></div>
+                                            <div class="story__heading"><a href="03-detail-2.html">Honda Odyssey 2.4L 2016</a></div>
                                         </article>
                                     </div>
                                     <div class="fyi--300"><img src="../figurations/ads/ads-300x250-1.jpg"></div>
@@ -337,7 +462,7 @@
                                             <figure class="story__thumb">
                                                 <a href="#"><img src="https://source.unsplash.com/400x275/?car/?sig=43"></a>
                                             </figure>
-                                            <div class="story__heading"><a href="03-article.html">Cấm Huawei dùng công nghệ Mỹ - Nước cờ sai của Tổng thống Trump?</a></div>
+                                            <div class="story__heading"><a href="03-detail-2.html">Cấm Huawei dùng công nghệ Mỹ - Nước cờ sai của Tổng thống Trump?</a></div>
                                             <div class="story__meta">
                                                 <time>16/05/2019</time>
                                             </div>
@@ -351,23 +476,60 @@
                                             <figure class="story__thumb">
                                                 <a href="#"><img src="https://source.unsplash.com/400x275/?car/?sig=44"></a>
                                             </figure>
-                                            <div class="story__heading"><a href="03-article.html">Top 5 ô tô GẦM CAO tầm giá 500-700 triệu đồng</a></div>
+                                            <div class="story__heading"><a href="03-detail-2.html">Top 5 ô tô GẦM CAO tầm giá 500-700 triệu đồng</a></div>
                                         </article>
                                         <article class="story">
                                             <figure class="story__thumb">
                                                 <a href="#"><img src="https://source.unsplash.com/400x275/?car/?sig=45"></a>
                                             </figure>
-                                            <div class="story__heading"><a href="03-article.html">Hướng dẫn lái xe: Kỹ năng lái xe tiết kiệm nhiên liệu</a></div>
+                                            <div class="story__heading"><a href="03-detail-2.html">Hướng dẫn lái xe: Kỹ năng lái xe tiết kiệm nhiên liệu</a></div>
                                         </article>
                                         <article class="story">
                                             <figure class="story__thumb">
                                                 <a href="#"><img src="https://source.unsplash.com/400x275/?car/?sig=46"></a>
                                             </figure>
-                                            <div class="story__heading"><a href="03-article.html">Cầm lái SUV hạng sang Lexus NX200t qua 1.200km</a></div>
+                                            <div class="story__heading"><a href="03-detail-2.html">Cầm lái SUV hạng sang Lexus NX200t qua 1.200km</a></div>
                                         </article>
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="detail-extension container">
+                <!-- Featured box -->
+                <div class="top-box">
+                    <div class="box-heading"><a href="02-category.html">Tiêu điểm</a></div>
+                    <div class="box-content">
+                        <div class="rank-2-stories">
+                            <article class="story story--tilt-2" data-tilt>
+                                <figure class="story__thumb">
+                                    <a href="#"><img src="https://source.unsplash.com/400x275/?car/?sig=41"></a>
+                                </figure>
+                                <div class="story__heading"><a href="03-detail-2.html">Cấm Huawei dùng công nghệ Mỹ - Nước cờ sai của Tổng thống Trump?</a></div>
+                                <div class="story__meta">
+                                    <time>16/05/2019</time>
+                                </div>
+                            </article>
+                            <article class="story story--tilt-5" data-tilt>
+                                <figure class="story__thumb">
+                                    <a href="#"><img src="https://source.unsplash.com/400x275/?car/?sig=42"></a>
+                                </figure>
+                                <div class="story__heading"><a href="03-detail-2.html">Cấm Huawei dùng công nghệ Mỹ - Nước cờ sai của Tổng thống Trump?</a></div>
+                                <div class="story__meta">
+                                    <time>16/05/2019</time>
+                                </div>
+                            </article>
+                            <article class="story story--tilt-1" data-tilt>
+                                <figure class="story__thumb">
+                                    <a href="#"><img src="https://source.unsplash.com/400x275/?car/?sig=41"></a>
+                                </figure>
+                                <div class="story__heading"><a href="03-detail-2.html">Cấm Huawei dùng công nghệ Mỹ - Nước cờ sai của Tổng thống Trump?</a></div>
+                                <div class="story__meta">
+                                    <time>16/05/2019</time>
+                                </div>
+                            </article>
                         </div>
                     </div>
                 </div>
@@ -383,7 +545,7 @@
                                         <figure class="story__thumb">
                                             <a href="#"><img src="https://source.unsplash.com/400x275/?car/?sig=51"></a>
                                         </figure>
-                                        <div class="story__heading"><a href="03-article.html">Hướng dẫn lái xe (P2): TRÁNH NHẦM CHÂN GA/PHANH chỉ sau 20 phút</a></div>
+                                        <div class="story__heading"><a href="03-detail-2.html">Hướng dẫn lái xe (P2): TRÁNH NHẦM CHÂN GA/PHANH chỉ sau 20 phút</a></div>
                                         <div class="story__meta">
                                             <time>16/05/2019</time>
                                         </div>
@@ -394,10 +556,10 @@
                                 </div>
                                 <div class="rank-2-stories">
                                     <article class="story">
-                                        <div class="story__heading"><a href="03-article.html">Top 5 ô tô GẦM CAO tầm giá 500-700 triệu đồng</a></div>
+                                        <div class="story__heading"><a href="03-detail-2.html">Top 5 ô tô GẦM CAO tầm giá 500-700 triệu đồng</a></div>
                                     </article>
                                     <article class="story">
-                                        <div class="story__heading"><a href="03-article.html">Hướng dẫn lái xe: Kỹ năng lái xe tiết kiệm nhiên liệu</a></div>
+                                        <div class="story__heading"><a href="03-detail-2.html">Hướng dẫn lái xe: Kỹ năng lái xe tiết kiệm nhiên liệu</a></div>
                                     </article>
                                 </div>
                             </div>
@@ -412,7 +574,7 @@
                                         <figure class="story__thumb">
                                             <a href="#"><img src="https://source.unsplash.com/400x275/?car/?sig=52"></a>
                                         </figure>
-                                        <div class="story__heading"><a href="03-article.html">Hướng dẫn lái xe (P2): TRÁNH NHẦM CHÂN GA/PHANH chỉ sau 20 phút</a></div>
+                                        <div class="story__heading"><a href="03-detail-2.html">Hướng dẫn lái xe (P2): TRÁNH NHẦM CHÂN GA/PHANH chỉ sau 20 phút</a></div>
                                         <div class="story__meta">
                                             <time>16/05/2019</time>
                                         </div>
@@ -423,10 +585,10 @@
                                 </div>
                                 <div class="rank-2-stories">
                                     <article class="story">
-                                        <div class="story__heading"><a href="03-article.html">Top 5 ô tô GẦM CAO tầm giá 500-700 triệu đồng</a></div>
+                                        <div class="story__heading"><a href="03-detail-2.html">Top 5 ô tô GẦM CAO tầm giá 500-700 triệu đồng</a></div>
                                     </article>
                                     <article class="story">
-                                        <div class="story__heading"><a href="03-article.html">Hướng dẫn lái xe: Kỹ năng lái xe tiết kiệm nhiên liệu</a></div>
+                                        <div class="story__heading"><a href="03-detail-2.html">Hướng dẫn lái xe: Kỹ năng lái xe tiết kiệm nhiên liệu</a></div>
                                     </article>
                                 </div>
                             </div>
@@ -441,7 +603,7 @@
                                         <figure class="story__thumb">
                                             <a href="#"><img src="https://source.unsplash.com/400x275/?car/?sig=53"></a>
                                         </figure>
-                                        <div class="story__heading"><a href="03-article.html">Hướng dẫn lái xe (P2): TRÁNH NHẦM CHÂN GA/PHANH chỉ sau 20 phút</a></div>
+                                        <div class="story__heading"><a href="03-detail-2.html">Hướng dẫn lái xe (P2): TRÁNH NHẦM CHÂN GA/PHANH chỉ sau 20 phút</a></div>
                                         <div class="story__meta">
                                             <time>16/05/2019</time>
                                         </div>
@@ -452,10 +614,10 @@
                                 </div>
                                 <div class="rank-2-stories">
                                     <article class="story">
-                                        <div class="story__heading"><a href="03-article.html">Top 5 ô tô GẦM CAO tầm giá 500-700 triệu đồng</a></div>
+                                        <div class="story__heading"><a href="03-detail-2.html">Top 5 ô tô GẦM CAO tầm giá 500-700 triệu đồng</a></div>
                                     </article>
                                     <article class="story">
-                                        <div class="story__heading"><a href="03-article.html">Hướng dẫn lái xe: Kỹ năng lái xe tiết kiệm nhiên liệu</a></div>
+                                        <div class="story__heading"><a href="03-detail-2.html">Hướng dẫn lái xe: Kỹ năng lái xe tiết kiệm nhiên liệu</a></div>
                                     </article>
                                 </div>
                             </div>
@@ -470,7 +632,7 @@
                                         <figure class="story__thumb">
                                             <a href="#"><img src="https://source.unsplash.com/400x275/?car/?sig=54"></a>
                                         </figure>
-                                        <div class="story__heading"><a href="03-article.html">Hướng dẫn lái xe (P2): TRÁNH NHẦM CHÂN GA/PHANH chỉ sau 20 phút</a></div>
+                                        <div class="story__heading"><a href="03-detail-2.html">Hướng dẫn lái xe (P2): TRÁNH NHẦM CHÂN GA/PHANH chỉ sau 20 phút</a></div>
                                         <div class="story__meta">
                                             <time>16/05/2019</time>
                                         </div>
@@ -481,10 +643,10 @@
                                 </div>
                                 <div class="rank-2-stories">
                                     <article class="story">
-                                        <div class="story__heading"><a href="03-article.html">Top 5 ô tô GẦM CAO tầm giá 500-700 triệu đồng</a></div>
+                                        <div class="story__heading"><a href="03-detail-2.html">Top 5 ô tô GẦM CAO tầm giá 500-700 triệu đồng</a></div>
                                     </article>
                                     <article class="story">
-                                        <div class="story__heading"><a href="03-article.html">Hướng dẫn lái xe: Kỹ năng lái xe tiết kiệm nhiên liệu</a></div>
+                                        <div class="story__heading"><a href="03-detail-2.html">Hướng dẫn lái xe: Kỹ năng lái xe tiết kiệm nhiên liệu</a></div>
                                     </article>
                                 </div>
                             </div>

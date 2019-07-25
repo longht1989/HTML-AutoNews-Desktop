@@ -63,7 +63,7 @@
 // @import "../../bootstrap-4.1.2/scss/utilities/shadows";
 @import "../../bootstrap-4.1.2/scss/utilities/sizing";
 @import "../../bootstrap-4.1.2/scss/utilities/spacing";
-// @import "../../bootstrap-4.1.2/scss/utilities/text";
+@import "../../bootstrap-4.1.2/scss/utilities/text";
 // @import "../../bootstrap-4.1.2/scss/utilities/visibility";
 
 // > elements
@@ -78,10 +78,11 @@
 @import "layout";
 @import "styles";
 @import "header";
+@import "form";
 // @import "navigation";
 @import "story";
 @import "story-tilt-js";
-// @import "pagination";
+@import "pagination";
 @import "breadcrumbs";
 @import "footer";
 @import "fyi";

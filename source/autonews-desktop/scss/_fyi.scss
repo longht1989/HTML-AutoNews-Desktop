@@ -11,30 +11,45 @@
         width: 300px;
         min-height: 250px;
         text-align: center;
-        background-color: #f7f7f7;
-        > a{
+
+        >a {
             display: block;
             text-align: center;
         }
     }
+
     &--970 {
         text-align: center;
         min-height: 90px;
         width: 970px;
-        margin: 0 auto;
+        margin: 24px auto;
     }
-    &--300x250{
+
+    &--728x90 {
+        text-align: center;
+        min-height: 90px;
+        width: 728px;
+        margin: 24px auto;
+    }
+
+    &--300x250 {
         padding: 15px;
         width: 300px;
         height: 280px;
-        background-color: #f7f7f7;
     }
-    &--610x235{
+
+    &--300x600 {
+        width: 300px;
+        height: 600px;
+        margin: 24px auto;
+    }
+
+    &--610x235 {
         width: 610px;
         height: 235px;
-        background-color: #f7f7f7;
         margin-top: 16px;
-        img{
+
+        img {
             width: 610px;
             height: 235px;
         }

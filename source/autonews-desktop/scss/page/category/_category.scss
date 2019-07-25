@@ -60,70 +60,63 @@
                     height: 450px;
                     position: relative;
 
-                    &:before {
-                        content: '';
-                        width: 260px;
-                        height: 215px;
-                        position: absolute;
-                        bottom: 0;
-                        left: 20px;
-                        z-index: 30;
-                        background-color: #fff;
-                    }
-
-                    &:after {
-                        content: '';
-                        width: 795px;
-                        height: 450px;
-                        position: absolute;
-                        left: -15px;
-                        top: -15px;
-                        z-index: 20;
-                        border: 4px solid $primary;
-                        transition: all .3s ease-in-out;
-                    }
-
                     &__thumb {
                         position: absolute;
                         width: 100%;
                         height: 100%;
                         z-index: 10;
                         box-shadow: 0 0 10px rgba(black, .15);
+                        overflow: visible;
+
+                        a {
+                            &:after {
+                                content: '';
+                                position: absolute;
+                                left: -20px;
+                                top: -15px;
+                                z-index: 20;
+                                border: 4px solid $primary;
+                                transition: all .3s ease-in-out;
+                                width: 795px;
+                                height: 450px;
+                            }
+                        }
                     }
 
-                    &__heading {
-                        width: 230px;
-                        position: relative;
-                        padding-top: 260px;
-                        left: 40px;
-                        z-index: 30;
+                    &__header {
+                        padding: 20px;
+                        width: 380px;
+                        height: 155px;
+                        position: absolute;
+                        bottom: 0;
+                        left: 20px;
+                        background-color: #fff;
+                        z-index: 20;
                     }
 
                     &__summary {
-                        width: 230px;
+                        width: 340px;
                         margin-top: 10px;
                         position: relative;
-                        left: 40px;
-                        z-index: 30;
+                        z-index: 20;
                     }
 
                     &__meta {
                         width: 300px;
                         margin-top: 10px;
                         position: relative;
-                        left: 40px;
-                        z-index: 30;
+                        z-index: 20;
                     }
 
                     &:hover {
-                        &:after {
-                            left: -0px;
-                            top: -0px;
-                        }
-
                         .story__thumb {
                             a {
-                                transform: scale($rate-zoom);
+                                transform: none;
+
+                                &::after {
+                                    left: 0px;
+                                    top: 0px;
+                                }
                             }
                         }
                     }
@@ -156,7 +149,6 @@
 
         .box-content {
             @include clearfix();
-            height: 612px;
             background-color: #fff;
             margin-top: 50px;
             padding: 0 15px;
@@ -193,6 +185,7 @@
                 border-top: 1px solid #000;
                 margin-top: 30px;
                 padding-top: 30px;
+                padding-bottom: 30px;
 
                 .story {
                     margin-top: 25px;
@@ -273,6 +266,66 @@
                     background-color: $primary;
                 }
             }
+        }
+    }
+
+    .most-read-box {
+        width: 810px;
+        margin-left: -15px;
+        margin-right: -15px;
+        margin-bottom: 40px;
+    }
+}
+
+.box {
+    &-brand {
+        .story {
+            display: flex;
+            align-items: center;
+            margin-bottom: 32px;
+
+            &__thumb {
+                width: 120px;
+                height: 120px;
+                border: 1px solid #adb5bd;
+                margin-right: 16px;
+                float: left;
+            }
+
+            &__heading {
+                a {
+                    font-size: 24px;
+                }
+            }
+        }
+
+        .pagination {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            transform: translateY(50%);
+        }
+    }
+}
+
+.card-grid {
+    margin-top: 20px;
+
+    .col-4 {
+        margin-bottom: 32px;
+    }
+
+    .story {
+        height: 100%;
+        background-color: #fff;
+
+        &__thumb {
+            width: 100%;
+            height: 157px;
+        }
+        &__header{
+            padding: 16px;
         }
     }
 }
