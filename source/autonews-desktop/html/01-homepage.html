@@ -115,9 +115,46 @@
                             </div>
                             <span class="menu" data-target="wrap-menu" id="button-expand"><i class="fal fa-bars"></i></span>
                             <span class="menu" data-target="wrap-menu" id="button-collapse"><i class="fal fa-times"></i></span>
+                            <div class="user-wrap">
+                                <span class="user" id="button-user" data-target="wrap-user-expand"><i class="fal fa-user"></i></span>
+                                <!-- user expand -->
+                                <div class="user-expand" id="wrap-user-expand">
+                                    <div class="form-group">
+                                        <label for="exampleDropdownFormEmail1">Email address</label>
+                                        <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleDropdownFormPassword1">Password</label>
+                                        <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="form-check form-check-inline">
+                                            <label class="check"> Lưu mật khẩu
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Đăng nhập</button>
+                                    <hr>
+                                    <p class="text-center text-uppercase mb-3">Đăng nhập bằng MXH</p>
+                                    <div class="row signin">
+                                        <div class="col-6">
+                                            <a href="#" class="facebook"><i class="fab fa-facebook-f"></i> Facebook</a>
+                                        </div>
+                                        <div class="col-6">
+                                            <a href="#" class="google"><i class="fab fa-google"></i> Google</a>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <a class="dropdown-item" href="04-user-signup.html">Bạn là thành viên mới? Đăng ký ngay!</a>
+                                    <a class="dropdown-item" href="04-user-signup.html">Quên mật khẩu?</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <!-- menu expand -->
                 <div class="menu-expand" id="wrap-menu">
                     <div class="container">
                         <div class="search-form">
@@ -129,8 +166,26 @@
                             </div>
                             <input type="text" placeholder="Từ khóa tìm kiếm" id="searchInput">
                             <i class="fal fa-search"></i>
+                            <div class="search-suggestion">
+                                <h3 class="heading">Gợi ý tìm kiếm</h3>
+                                <div class="suggestion-wrap">
+                                    <h4 class="title"><b>Hãng</b><a href="#">Xem thêm</a></h4>
+                                    <p class="text"><a href="#">BMW</a></p>
+                                </div>
+                                <div class="suggestion-wrap">
+                                    <h4 class="title"><b>Dòng xe</b><a href="#">Xem thêm</a></h4>
+                                    <p class="text"><a href="#">2020 BMW 2 Series</a></p>
+                                    <p class="text"><a href="#">2019 BMW i8 Coupe</a></p>
+                                </div>
+                                <div class="suggestion-wrap">
+                                    <h4 class="title"><b>Tin tức</b><a href="#">Xem thêm</a></h4>
+                                    <p class="text"><a href="#">Top 10 xe <span class="highlight">BMW</span> bán chạy 2019</a></p>
+                                    <p class="text"><a href="#">Top 10 xe <span class="highlight">BMW</span> bán chạy 2019</a></p>
+                                    <p class="text"><a href="#">Top 10 xe <span class="highlight">BMW</span> bán chạy 2019</a></p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="row">
+                        <div class="row mt-5">
                             <div class="col-2">
                                 <div class="group-link"><a href="02-category-1.html">Tin tức</a></div>
                                 <div class="more-link">
@@ -190,9 +245,7 @@
             <div class="hero-zone">
                 <div class="wrap">
                     <div class="item has-black-mask">
-                        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" class="video-bg">
-                            <source src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4" type="video/mp4">
-                        </video>
+                        <img src="https://source.unsplash.com/random/960x335?sig=0" class="photo-bg">
                         <div class="container">
                             <div class="row">
                                 <div class="col-6 float-left">
@@ -200,17 +253,16 @@
                                         <article class="story">
                                             <h3 class="story__heading">
                                                 <a href="03-detail-2.html" title="Mazda chơi lớn: Đăng ký hết tên xe từ CX-10 tới tận CX-90">
-                                                    <span class="font-size-1">Mazda chơi lớn: Đăng ký hết tên xe từ CX-10 tới tận CX-90</span>
+                                                    <span class="font-size-1">Mazda chơi lớn: Đăng </span>
                                                 </a>
                                             </h3>
                                             <div class="story__summary">
-                                                Tham gia sự kiện “Family Day with GLC 200 - Ngày hội Gia đình cùng GLC 200” diễn ra vào ngày 25/5/2019, khách hàng sẽ có cơ hội lái thử mẫu xe Mercedes-Benz GLC 200 tại trường đua Đại Nam.
+                                                Tham gia sự kiện “Family Day with GLC 200 - Ngày hội Gia đình
                                             </div>
                                         </article>
                                     </div>
                                     <div class="cta">
-                                        <a href="03-detail-2.html" class="btn-style-1">Xem chi tiết</a>
-                                        <a href="03-detail-2.html" class="btn-style-2">Đăng ký ngay</a>
+                                        <a href="03-detail-2.html" class="btn-style-2">Xem chi tiết</a>
                                     </div>
                                 </div>
                                 <div class="col-6 ml-auto">
@@ -247,18 +299,16 @@
                             </div>
                         </div>
                     </div>
-                    <div class="item">
-                        <img src="https://source.unsplash.com/1280x1024/?car/?sig=0" class="photo-bg">
+                    <div class="item has-black-mask">
+                        <img src="https://source.unsplash.com/random/960x335?sig=1" class="photo-bg">
                         <div class="container">
                             <div class="row">
-                                <div class="col-12 offset-0">
+                                <div class="col-6 float-left">
                                     <div class="rank-1-stories">
                                         <article class="story">
                                             <div class="story__heading">
                                                 <a href="03-detail-2.html">
-                                                    <span class="font-size-1">CƠ HỘI TRẢI NGHIỆM XE</span>
-                                                    <span class="font-size-2">MERCEDES-BENZ</span>
-                                                    <span class="font-size-1">TẠI TRƯỜNG ĐUA ĐẠI NAM</span>
+                                                    <span class="font-size-1">Phiên bản đặc biệt VW Touareg sắp về Việt Nam</span>
                                                 </a>
                                             </div>
                                             <div class="story__summary">
@@ -267,15 +317,14 @@
                                         </article>
                                     </div>
                                     <div class="cta">
-                                        <a href="03-detail-2.html" class="btn-style-1">Xem chi tiết</a>
-                                        <a href="03-detail-2.html" class="btn-style-2">Đăng ký ngay</a>
+                                        <a href="03-detail-2.html" class="btn-style-2">Xem chi tiết</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="item has-black-mask">
-                        <img src="https://source.unsplash.com/1280x1024/?car/?sig=1" class="photo-bg">
+                        <img src="https://source.unsplash.com/random/960x335?sig=2" class="photo-bg">
                         <div class="container">
                             <div class="row">
                                 <div class="col-6 float-left">
@@ -294,11 +343,10 @@
                                         </article>
                                     </div>
                                     <div class="cta">
-                                        <a href="03-detail-2.html" class="btn-style-1">Xem chi tiết</a>
                                         <a href="03-detail-2.html" class="btn-style-2">Đăng ký ngay</a>
                                     </div>
                                 </div>
-                                <div class="col-6 ml-auto">
+                                <!--  <div class="col-6 ml-auto">
                                     <div class="rank-2-stories">
                                         <article class="story story--tilt-4" data-tilt>
                                             <figure class="story__thumb">
@@ -328,7 +376,7 @@
                                             </div>
                                         </article>
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -352,6 +400,9 @@
                                                 </figure>
                                                 <div class="story__header">
                                                     <div class="story__heading"><a href="03-detail-2.html">Cấm Huawei dùng công nghệ Mỹ - Nước cờ sai của Tổng thống Trump?</a></div>
+                                                    <div class="story__meta">
+                                                        <time>30/07/2019</time>
+                                                    </div>
                                                 </div>
                                             </article>
                                         </div>
@@ -578,7 +629,29 @@
                                         <span class="btn-next"></span>
                                     </div>
                                 </div>
-                                <div class="fyi--300x600"><img src="../figurations/ads/300x600.jpg"></div>
+                            </div>
+                            <div class="top-box common mt-5">
+                                <div class="box-heading">Xem theo hãng</div>
+                                <div class="box-content">
+                                    <div class="text-listing">
+                                        <h5 class="mb-4"><a href="02-category-car-listing.html">BMW</a></h5>
+                                        <h5 class="mb-4"><a href="02-category-car-listing.html">Audi</a></h5>
+                                        <h5 class="mb-4"><a href="02-category-car-listing.html">Bentley</a></h5>
+                                        <h5 class="mb-4"><a href="02-category-car-listing.html">Honda</a></h5>
+                                        <h5 class="mb-4"><a href="02-category-car-listing.html">Hyundai</a></h5>
+                                        <h5 class="mb-4"><a href="02-category-car-listing.html">Toyota</a></h5>
+                                        <h5 class="mb-4"><a href="02-category-car-listing.html">Ford</a></h5>
+                                        <h5 class="mb-4"><a href="02-category-car-listing.html">Vinfast</a></h5>
+                                        <h5 class="mb-4"><a href="02-category-car-listing.html">BMW</a></h5>
+                                        <h5 class="mb-4"><a href="02-category-car-listing.html">Audi</a></h5>
+                                        <h5 class="mb-4"><a href="02-category-car-listing.html">Bentley</a></h5>
+                                        <h5 class="mb-4"><a href="02-category-car-listing.html">Honda</a></h5>
+                                        <h5 class="mb-4"><a href="02-category-car-listing.html">Hyundai</a></h5>
+                                        <h5 class="mb-4"><a href="02-category-car-listing.html">Toyota</a></h5>
+                                        <h5 class="mb-4"><a href="02-category-car-listing.html">Ford</a></h5>
+                                        <h5 class="mb-4"><a href="02-category-car-listing.html">Vinfast</a></h5>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -663,9 +736,11 @@
                                     <figure class="story__thumb">
                                         <a href="#"><img src="https://source.unsplash.com/400x275/?car/?sig=38"></a>
                                     </figure>
-                                    <div class="story__heading"><a href="03-detail-2.html">Đánh giá Mazda CX-5 2108: Thiết kế nam tính, vận hành an toàn</a></div>
-                                    <div class="story__meta">
-                                        <time>16/05/2019</time>
+                                    <div class="story__header">
+                                        <div class="story__heading"><a href="03-detail-2.html">Đánh giá Mazda CX-5 2108: Thiết kế nam tính, vận hành an toàn</a></div>
+                                        <div class="story__meta">
+                                            <time>16/05/2019</time>
+                                        </div>
                                     </div>
                                 </article>
                             </div>

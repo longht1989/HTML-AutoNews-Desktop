@@ -63,15 +63,23 @@ a {
 // > hero-zone
 .hero-zone {
     position: relative;
-    height: 620px;
+    // height: 620px;
+    height: 0;
+    width: 100%;
+    padding-bottom: 35%;
     overflow: hidden;
+    min-width: 1140px;
+
+    .wrap {
+        height: 100%;
+    }
 
     .bx-pager {
         display: flex;
         justify-content: center;
         position: relative;
         position: absolute;
-        bottom: 90px;
+        bottom: 8%;
         width: 100%;
 
         .bx-pager-item {
@@ -79,40 +87,63 @@ a {
                 display: flex;
                 justify-content: center;
                 align-content: flex-start;
-                margin: 0 5px;
+                margin: 0 8px;
                 width: 16px;
                 height: 16px;
                 @include border-radius(50%);
-                border: 1px solid white;
                 text-indent: -999em;
-                background-color: transparent;
+                background-color: white;
+                transition: all 0.2s ease;
+                margin-top: 8px;
+                opacity: 0.5;
             }
 
             .active {
                 background-color: white;
+                width: 28px;
+                height: 28px;
+                margin-top: 0;
+                opacity: 1;
             }
         }
     }
 
+    .bx-viewport {
+        // height: 100% !important;
+    }
+
     .item {
-        height: 620px;
-        padding-bottom: 60px;
+        // height: 620px;
+        padding: 40px 0px;
         display: flex;
         align-items: center;
         position: relative;
+        height: 100%;
+
+        @media screen and (min-width: 1281px) {
+            padding: 60px 0;
+        }
+
+        @media screen and (min-width: 1441px) {
+            padding: 80px 0;
+        }
+
+        @media screen and (min-width: 1661px) {
+            padding: 120px 0;
+        }
 
         .photo-bg,
         .video-bg {
             position: absolute;
-            top: 50%;
-            left: 50%;
+            top: 0;
+            left: 0;
             width: 100%;
             height: auto;
             z-index: 0;
-            -ms-transform: translateX(-50%) translateY(-50%);
-            -moz-transform: translateX(-50%) translateY(-50%);
-            -webkit-transform: translateX(-50%) translateY(-50%);
-            transform: translateX(-50%) translateY(-50%);
+            // -ms-transform: translateX(-50%) translateY(-50%);
+            // -moz-transform: translateX(-50%) translateY(-50%);
+            // -webkit-transform: translateX(-50%) translateY(-50%);
+            // transform: translateX(-50%) translateY(-50%);
         }
 
         .photo-bg {
@@ -129,7 +160,7 @@ a {
                 height: 100%;
                 width: 100%;
                 background-color: black;
-                opacity: 0.5;
+                opacity: 0.35;
                 z-index: 10;
             }
         }
@@ -148,7 +179,7 @@ a {
 
     .rank-1-stories {
         .story {
-            width: 580px;
+            width: 100%;
 
             &__thumb {
                 position: absolute;
@@ -168,6 +199,10 @@ a {
                     .font-size-1 {
                         font-weight: normal;
                         font-size: 40px;
+
+                        @media screen and (max-width: 1280px) {
+                            font-size: 32px;
+                        }
                     }
 
                     .font-size-2 {
@@ -186,6 +221,10 @@ a {
                 width: 470px;
                 @include font-style(16, 22, normal);
                 color: #fff;
+
+                @media screen and (max-width: 1280px) {
+                    display: none;
+                }
             }
         }
     }
@@ -246,6 +285,38 @@ a {
             &__thumb {
                 box-shadow: 0 0 15px rgba(0, 0, 0, .15);
             }
+
+            @media screen and (min-width: 1661px) {
+                margin-top: 30px;
+            }
+
+            &.story--tilt-4 {
+                @media screen and (max-width: 1280px) {
+                    height: 90px;
+
+                    .story__thumb {
+                        width: 80px;
+                        height: 60px;
+
+                        &>a {
+                            &>img {
+                                height: 100%;
+                                width: auto;
+                            }
+                        }
+                    }
+
+                    .story__heading,
+                    .story__meta {
+                        left: 90px;
+                        width: calc(100% - 110px);
+                    }
+
+                    .story__meta {
+                        top: 67px;
+                    }
+                }
+            }
         }
     }
 }
@@ -299,7 +370,6 @@ a {
                 &__header {
                     padding: 20px;
                     width: 260px;
-                    height: 95px;
                     position: absolute;
                     bottom: 0;
                     left: 20px;
@@ -319,7 +389,7 @@ a {
                     width: 230px;
                     margin-top: 10px;
                     position: relative;
-                    left: 40px;
+                    left: 0px;
                     z-index: 20;
                 }
 
@@ -453,7 +523,7 @@ a {
 
 // > best-selling-car
 .top-view {
-    width: 320px;
+    // width: 320px;
 
     .box-heading {
         @include box-heading-style-1;
@@ -1038,17 +1108,6 @@ a {
             height: 300px;
             position: relative;
 
-            &:before {
-                content: '';
-                width: 345px;
-                height: 110px;
-                position: absolute;
-                bottom: 0;
-                left: 20px;
-                z-index: 20;
-                background-color: #fff;
-            }
-
             &__thumb {
                 position: absolute;
                 width: 100%;
@@ -1057,12 +1116,18 @@ a {
                 box-shadow: 0 0 10px rgba(black, .15);
             }
 
-            &__heading {
-                width: 300px;
-                position: relative;
-                padding-top: 210px;
-                left: 40px;
+            &__header {
+                width: 345px;
+                position: absolute;
+                bottom: 0;
+                left: 20px;
                 z-index: 20;
+                background-color: #fff;
+                padding: 20px;
+            }
+
+            &__heading {
+                position: relative;
             }
 
             &__summary {
@@ -1075,11 +1140,7 @@ a {
             }
 
             &__meta {
-                width: 300px;
                 margin-top: 10px;
-                position: relative;
-                left: 40px;
-                z-index: 20;
             }
 
             &:hover {

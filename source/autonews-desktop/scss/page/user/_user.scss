@@ -1,0 +1,76 @@
+// ====================================
+// User
+// ====================================
+
+.user {
+    &-content {
+        margin-top: 64px;
+        margin-bottom: 64px;
+    }
+
+    &-nav-column {
+        font-size: 16px;
+
+        .nav-link {
+            padding: 1rem 0;
+
+            &.active {
+                font-weight: bold;
+            }
+        }
+
+        hr {
+            width: 100%;
+        }
+    }
+
+    &-content-column {
+        .heading {
+            margin-bottom: 1.6rem;
+        }
+
+        .form {
+            &-group {
+                margin-bottom: 2.4rem;
+                font-size: 16px;
+
+                label {
+                    display: block;
+                    margin-bottom: 1rem;
+                    font-weight: bold;
+                }
+
+                &.is-active {
+                    .form-control {
+                        background-color: #fff;
+                    }
+                }
+            }
+
+            &-control {
+                width: 100%;
+                height: 40px;
+                background-color: transparent;
+                border: 1px solid #eee;
+                padding: 0.5rem 1rem;
+            }
+        }
+
+        .btn {
+            border-radius: 0;
+            height: 40px;
+            line-height: 38px;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+
+        .button {
+
+            &-save,
+            &-cancel,
+            &-submit {
+                display: none;
+            }
+        }
+    }
+}

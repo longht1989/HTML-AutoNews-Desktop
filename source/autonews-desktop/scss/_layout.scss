@@ -8,7 +8,8 @@
     width: 795px;
 }
 
-.sidebar {
+.sidebar,
+.index-aside-column {
     width: 320px;
 }
 
@@ -30,7 +31,8 @@
 
 .top-box {
     &.common {
-    	margin-bottom: 24px;
+        margin-bottom: 24px;
+
         .box-content {
             padding: 24px;
             background-color: #fff;
@@ -73,6 +75,23 @@
 
             &+.btn {
                 margin-left: 16px;
+            }
+        }
+
+        .text-listing {
+            @include clearfix();
+            vertical-align: top;
+            font-size: 0;
+
+            h5 {
+                width: 50%;
+                display: inline-block;
+                font-size: 16px;
+                text-transform: uppercase;
+
+                a {
+                    display: block;
+                }
             }
         }
     }

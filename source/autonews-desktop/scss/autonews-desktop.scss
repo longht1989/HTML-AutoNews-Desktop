@@ -19,7 +19,7 @@
 @import "../../bootstrap-4.1.2/scss/root";
 @import "../../bootstrap-4.1.2/scss/reboot";
 // @import "../../bootstrap-4.1.2/scss/type";
-// @import "../../bootstrap-4.1.2/scss/images";
+@import "../../bootstrap-4.1.2/scss/images";
 // @import "../../bootstrap-4.1.2/scss/code";
 @import "../../bootstrap-4.1.2/scss/grid";
 @import "../../bootstrap-4.1.2/scss/tables";
@@ -30,7 +30,7 @@
 // @import "../../bootstrap-4.1.2/scss/button-group";
 // @import "../../bootstrap-4.1.2/scss/input-group";
 // @import "../../bootstrap-4.1.2/scss/custom-forms";
-// @import "../../bootstrap-4.1.2/scss/nav";
+@import "../../bootstrap-4.1.2/scss/nav";
 // @import "../../bootstrap-4.1.2/scss/navbar";
 // @import "../../bootstrap-4.1.2/scss/card";
 // @import "../../bootstrap-4.1.2/scss/breadcrumb";
@@ -38,7 +38,7 @@
 // @import "../../bootstrap-4.1.2/scss/badge";
 // @import "../../bootstrap-4.1.2/scss/jumbotron";
 // @import "../../bootstrap-4.1.2/scss/alert";
-// @import "../../bootstrap-4.1.2/scss/progress";
+@import "../../bootstrap-4.1.2/scss/progress";
 // @import "../../bootstrap-4.1.2/scss/media";
 // @import "../../bootstrap-4.1.2/scss/list-group";
 // @import "../../bootstrap-4.1.2/scss/close";
@@ -53,7 +53,7 @@
 // @import "../../bootstrap-4.1.2/scss/utilities/align";
 // @import "../../bootstrap-4.1.2/scss/utilities/background";
 // @import "../../bootstrap-4.1.2/scss/utilities/borders";
-// @import "../../bootstrap-4.1.2/scss/utilities/clearfix";
+@import "../../bootstrap-4.1.2/scss/utilities/clearfix";
 // @import "../../bootstrap-4.1.2/scss/utilities/display";
 // @import "../../bootstrap-4.1.2/scss/utilities/embed";
 @import "../../bootstrap-4.1.2/scss/utilities/flex";
@@ -79,14 +79,21 @@
 @import "styles";
 @import "header";
 @import "form";
+@import "card";
+
 // @import "navigation";
+@import "tabs";
 @import "story";
 @import "story-tilt-js";
 @import "pagination";
 @import "breadcrumbs";
 @import "footer";
 @import "fyi";
+
+// Page
 @import "page/category/category";
 @import "page/article/article";
+@import "page/article/detailcar";
+@import "page/user/user";
 
 
