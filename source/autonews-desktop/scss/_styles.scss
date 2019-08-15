@@ -121,15 +121,15 @@ a {
         height: 100%;
 
         @media screen and (min-width: 1281px) {
-            padding: 60px 0;
+            padding: 40px 0 80px;
         }
 
         @media screen and (min-width: 1441px) {
-            padding: 80px 0;
+            padding: 40px 0 120px;
         }
 
         @media screen and (min-width: 1661px) {
-            padding: 120px 0;
+            padding: 80px 0 160px;
         }
 
         .photo-bg,
@@ -1089,6 +1089,11 @@ a {
             }
         }
     }
+
+    @media screen and(max-width: 1023px) {
+        width: 1170px;
+    }
+
 }
 
 // > special-car-box
@@ -1690,6 +1695,28 @@ a {
 
                 .story__meta {}
             }
+        }
+    }
+
+    @media screen and (max-width: 1023px) {
+        padding: 0;
+
+        .box-content {
+            margin-top: 0;
+        }
+
+        .container,
+        .container-xxl {
+            background-color: #fff;
+        }
+
+        .container {
+            padding-top: 30px;
+        }
+
+        .container-xxl {
+            padding-top: 30px;
+            padding-bottom: 30px;
         }
     }
 }

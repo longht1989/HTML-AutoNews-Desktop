@@ -27,6 +27,7 @@ if ($(".hero-zone .wrap").length > 0) {
         onSliderLoad: function() {
             var sectionHeight = $('.hero-zone').outerHeight();
             $('.hero-zone .item').outerHeight(sectionHeight);
+            $('.hero-zone .bx-viewport').outerHeight(sectionHeight);
         }
     });
 

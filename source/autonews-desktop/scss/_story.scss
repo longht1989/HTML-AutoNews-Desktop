@@ -57,12 +57,13 @@
     }
 
     &__heading {
-        a {
-            display: flex;
-        }
 
         a:visited {
             // color: $gray-500;
+        }
+
+        .highlight {
+            color: $blue;
         }
     }
 
@@ -178,7 +179,7 @@
 
     &__heading {
         a {
-            display: flex;
+            display: block;
             font-size: 14px;
             font-size: 1.4rem;
             font-weight: bold;
