@@ -25,8 +25,8 @@
 @import "../../bootstrap-4.1.2/scss/tables";
 // @import "../../bootstrap-4.1.2/scss/forms";
 @import "../../bootstrap-4.1.2/scss/buttons";
-// @import "../../bootstrap-4.1.2/scss/transitions";
-// @import "../../bootstrap-4.1.2/scss/dropdown";
+@import "../../bootstrap-4.1.2/scss/transitions";
+@import "../../bootstrap-4.1.2/scss/dropdown";
 // @import "../../bootstrap-4.1.2/scss/button-group";
 // @import "../../bootstrap-4.1.2/scss/input-group";
 // @import "../../bootstrap-4.1.2/scss/custom-forms";
@@ -41,8 +41,8 @@
 @import "../../bootstrap-4.1.2/scss/progress";
 // @import "../../bootstrap-4.1.2/scss/media";
 // @import "../../bootstrap-4.1.2/scss/list-group";
-// @import "../../bootstrap-4.1.2/scss/close";
-// @import "../../bootstrap-4.1.2/scss/modal";
+@import "../../bootstrap-4.1.2/scss/close";
+@import "../../bootstrap-4.1.2/scss/modal";
 // @import "../../bootstrap-4.1.2/scss/tooltip";
 // @import "../../bootstrap-4.1.2/scss/popover";
 // @import "../../bootstrap-4.1.2/scss/carousel";
@@ -96,4 +96,8 @@
 @import "page/article/detailcar";
 @import "page/user/user";
 
+// Share 
+@import "share/global";
 
+// Helper class
+@import "helper/helper";

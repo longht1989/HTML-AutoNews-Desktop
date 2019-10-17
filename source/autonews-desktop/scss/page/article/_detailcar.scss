@@ -39,14 +39,28 @@
                         .row {
                             margin-left: 0;
                             margin-right: 0;
-                                padding: 8px 0;
+                            padding: 8px 0;
 
                             &:nth-child(2n+1) {
-                                    background-color: #f0f0f0;
-                                *[class^='col-'] {
-                                }
+                                background-color: #f0f0f0;
+
+                                *[class^='col-'] {}
                             }
                         }
+
+                        a {
+                            color: $blue;
+
+                            &:hover {
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+
+                .lightgallery {
+                    img {
+                        cursor: pointer;
                     }
                 }
             }

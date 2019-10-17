@@ -64,6 +64,7 @@
 
         .highlight {
             color: $blue;
+            font-style: normal;
         }
     }
 
@@ -79,6 +80,21 @@
 
         a {
             display: flex;
+        }
+
+        .story__category {
+            display: inline;
+        }
+    }
+
+    &__category {
+        text-transform: uppercase;
+        color: inherit;
+
+        &::after {
+            content: "-";
+            display: inline;
+            margin: 0 0.5rem;
         }
     }
 
@@ -194,7 +210,7 @@
         text-transform: uppercase;
 
         >* {
-            margin-left: $spacer-3;
+            // margin-left: $spacer-3;
 
             &:first-child {
                 margin-left: 0;

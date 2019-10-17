@@ -16,6 +16,14 @@
     position: relative;
     z-index: 21;
 
+    .container {
+        background-color: #000;
+
+        @media screen and (min-width: 1025px) {
+            background-color: transparent;
+        }
+    }
+
     .col-9 {
         display: flex;
         justify-content: flex-end;
@@ -421,6 +429,7 @@
                 bottom: 13px;
                 right: 13px;
                 font-size: 24px;
+                cursor: pointer;
             }
 
             .suggestion {
@@ -475,6 +484,10 @@
             right: 0;
             z-index: 1;
 
+            &:empty {
+                background-color: transparent;
+            }
+
             .heading {
                 font-size: 20px;
                 font-weight: bold;
@@ -526,6 +539,7 @@
                 .highlight {
                     color: $blue;
                     font-weight: bold;
+                    font-style: normal;
                 }
             }
         }

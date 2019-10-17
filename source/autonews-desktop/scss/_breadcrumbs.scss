@@ -35,6 +35,11 @@
                 line-height: 1.25;
                 margin-right: 1px;
 
+                h1 {
+                    font-size: inherit;
+                    line-height: inherit;
+                }
+
                 a {
                     display: flex;
                     transition: all 0.2s ease-in-out;
