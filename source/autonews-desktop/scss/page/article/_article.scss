@@ -683,6 +683,14 @@
                     height: 230px;
                 }
             }
+
+            .image-wrap {
+                position: static;
+
+                img {
+                    z-index: 20;
+                }
+            }
         }
 
         .detail__social {

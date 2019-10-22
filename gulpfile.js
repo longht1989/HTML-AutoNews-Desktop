@@ -50,13 +50,13 @@ var paths = {
 function getDateTime() {
     var d = new Date();
     var month = d.getMonth() + 1;
-    if(month < 10) month = 0 + "" + month;
+    if (month < 10) month = 0 + "" + month;
     var day = d.getDate();
-    if(day < 10) day = 0 + "" + day;
+    if (day < 10) day = 0 + "" + day;
     var hours = d.getHours();
-    if(hours < 10) hours = 0 + "" + hours;
+    if (hours < 10) hours = 0 + "" + hours;
     var minutes = d.getMinutes();
-    if(minutes < 10) minutes = 0 + "" + minutes;
+    if (minutes < 10) minutes = 0 + "" + minutes;
     var n = d.getFullYear() + "" + month + "" + day + "" + hours + "" + minutes;
     return n;
 }
@@ -76,9 +76,7 @@ function reportError(error, project, css_file) {
 function style(project, scss_file, css_file) {
     gulp.src(paths.source_folder + '/' + project + '/scss/' + scss_file)
         .pipe(sourcemaps.init())
-        .pipe(sass().on('error', function(err) {
-            reportError(err, project, css_file);
-        }))
+        .pipe(sass().on('error', sass.logError))
         .pipe(cssmin())
         .pipe(sourcemaps.write('../maps', {
             mapFile: function(mapFilePath) {
@@ -136,19 +134,19 @@ function abf(project, link_static) {
         .pipe(inject.replace('../img', link_static + '/img'))
         .pipe(gulp.dest(paths.dist_folder + '/' + project + '/styles/css'))
         .pipe(browserSync.stream({ once: true }));
-        // demo 
-        // gulp.task('autonews-d', function() { task_run('autonews-desktop', 'https://baomoi-static.zadn.vn/desktop/styles'); });
+    // demo 
+    // gulp.task('autonews-d', function() { task_run('autonews-desktop', 'https://baomoi-static.zadn.vn/desktop/styles'); });
 };
 
 function task_run(project, link_static) {
-    copy_img(project);
     style(project, project + ".scss", project + ".css");
+    copy_img(project);
     copy_js(project);
     copy_html(project);
     copy_fig_img(project);
     copy_font(project);
-    compress_png(project);
-    if (link_static) {abf(project, link_static)};
+    // compress_png(project);
+    if (link_static) { abf(project, link_static) };
 
     browserSync.init({ server: { baseDir: "./" }, open: false });
     gulp.watch(paths.source_folder + '/' + project + '/scss/**/*', function(obj) {
