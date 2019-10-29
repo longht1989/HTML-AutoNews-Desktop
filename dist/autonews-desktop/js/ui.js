@@ -11,6 +11,10 @@
  * report choose tag
  *    -> toggle context-menu channelpage
  */
+var userAgent, ieReg, ie;
+userAgent = window.navigator.userAgent;
+ieReg = /msie|Trident.*rv[ :]*11\./gi;
+ie = ieReg.test(userAgent);
 
 $(function() {
     // check for touch support
@@ -132,10 +136,16 @@ $(function() {
 
     // mediumZoom in detail
     if ($('.wrapper').hasClass('detail-page')) {
-        mediumZoom('[data-zoomable]', {
+        const zoom = mediumZoom('[data-zoomable]', {
             margin: 24,
-            background: '#272727'
+            background: '#272727',
         });
+        // zoom.on('open', function() {
+        //     if (!ie) {
+        //         console.log('test');
+        //     }
+        // });
+
         stickyads(".detail-extension .main-column", ".detail-extension .sidebar", "#zoneWrap", "#adsSticky", 80);
     }
 
