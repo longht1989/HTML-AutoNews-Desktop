@@ -138,7 +138,7 @@ function abf(project, link_static) {
     // gulp.task('autonews-d', function() { task_run('autonews-desktop', 'https://baomoi-static.zadn.vn/desktop/styles'); });
 };
 
-function task_run(project, link_static) {
+function task_run(project) {
     style(project, project + ".scss", project + ".css");
     copy_img(project);
     copy_js(project);
@@ -146,7 +146,7 @@ function task_run(project, link_static) {
     copy_fig_img(project);
     copy_font(project);
     // compress_png(project);
-    if (link_static) { abf(project, link_static) };
+    // if (link_static) { abf(project, link_static) };
 
     browserSync.init({ server: { baseDir: "./" }, open: false });
     gulp.watch(paths.source_folder + '/' + project + '/scss/**/*', function(obj) {
